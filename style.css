@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     /* box-sizing: border-box; */
 }
 
-body{
+body {
     max-width: 1599px;
     margin: auto;
-    padding: 10;
+    padding: 10px;
 }
 
-.header{
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,11 +29,12 @@ body{
     padding-left: 199.88px; */
 }
 
-.slider_text{
+.slider_text {
     width: 789.51px;
     padding-top: 254px;
     padding-left: 199.88px;
 }
+
 .h1_slider {
     font-family: Cormorant;
     font-size: 60px;
@@ -42,6 +43,66 @@ body{
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-   color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.quote_sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+   position: relative;
+   max-width: 704px;
+   height: 96px;
+   margin-top: 150px;
+}
+
+.quote p {
+   font-family: Cormorant;
+   font-size: 40px;
+   font-style: italic;
+   font-weight: 300;
+   line-height: 48.44px;
+   text-align: center;
+   text-underline-position: from-font;
+   text-decoration-skip-ink: none;
+}
+
+.quote_plate{
+    position: absolute;
+    width: 359px;
+    height: 61px;
+    left: 385px;
+    top: 50px;
+    opacity: 0.5;
+    background-color: #f7f2ea;
+} 
+
+.collection {
+    max-width: 1200px;
+    height: 247px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.collection div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: Cormorant;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48.44px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
 
 }
