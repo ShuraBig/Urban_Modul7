@@ -1,0 +1,53 @@
+# Общие файлы и директории
+/node_modules/
+/bower_components/
+/dist/
+/build/
+/out/
+/target/
+*.log
+Thumbs.db
+.DS_Store
+.env
+.env.*
+*.tmp
+*.bak
+*.class
+*.jar
+*.war
+__pycache__/
+*.pyc
+*.class
+*.o
+*.so
+*.dll
+*.exe
+*.orig
+
+# VS Code специфические файлы
+.vscode/
+*.suo
+*.ntvs*
+*.userprefs
+*.user
+*.ncb
+*.sdf
+*.opendb
+*.VC.db
+*.VC.VC.opendb
+*.sln.dotSettings
+*.csproj.user
+*.csproj.metaproj
+*.nuget
+
+# Файлы кеша и локальные настройки
+*.db
+*.db-shm
+*.db-wal
+*.cache
+
+# Другие файлы, которые часто нужно игнорировать
+*.mdb
+*.log
+*.pid
+
