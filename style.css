@@ -292,8 +292,8 @@ h2 {
 
 .blog {
     margin: 60px auto;
-    width: 1142px;
-    height: 400px;
+    max-width: 1142px;
+    min-height: 400px;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
@@ -341,6 +341,7 @@ h2 {
 }
 
 
+
 h3 {
     font-family: Cormorant;
     font-size: 24px;
@@ -381,6 +382,27 @@ a {
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+}
+
+@media (max-width: 768px) {
+
+    section#blog{
+        display: flex;
+        justify-content: center;
+    }
+
+    .blog div {
+        width: 542px;
+    }
+
+    div#block__two, #block__four {
+        margin-left: 98px;
+    }
+
+    .blog_sec {
+        width: 640px;
+    }
+
 }
 
 .subscribe {
@@ -504,6 +526,27 @@ input[type="email"] {
     margin: auto;
 }
 
+@media (max-width: 768px) {
+    .subscribe {
+        margin-top: 120px;
+    }
+
+    .sub__h2 {
+        margin-top: 60px;
+        justify-content: center;
+    }
+
+    .sub__p {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .sub__email {
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+}
+
 .prio__item_maintext {
     font-family: Open Sans;
     font-size: 30px;
@@ -549,6 +592,12 @@ input[type="email"] {
     margin-top: 150px;
 }
 
+@media (max-width: 768px) {
+.prioritise {
+    margin: 120px 65px 0;
+}
+}
+
 footer {
     max-width: 1600px;
     background-color: #F7F2EA;
@@ -567,10 +616,10 @@ footer {
 
 .foot__nav {
     display: flex;
-    max-width: 466px;
+    width: 450px;
     justify-content: space-between;
     margin: 100px auto 0;
-    gap: 238px;
+    /* gap: 50px; */
 }
 
 .foot__nav_header {
@@ -704,4 +753,32 @@ footer {
     gap: 20px;
     align-items: center;
     justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    footer {
+        margin-top: 120px;
+        flex-wrap: wrap;
+    }
+
+    .foot__nav {
+        max-width: 240px;
+        gap: 65px;
+        margin: 50px 65px 0;
+    }
+
+    .foot__secblock {
+        width: 270px;
+        flex-wrap: wrap;
+    }
+ 
+    .foot__quote {
+        width: 270px;
+        margin-top: 50px;
+    }
+
+    .foot__adress {
+        margin-top: 50px;
+        margin-right: 65px;
+    }
 }
