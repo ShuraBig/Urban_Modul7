@@ -10,8 +10,42 @@
 
 <body>
     <header>
+        <div style="display: flex; width: 100%; justify-content: center; position: absolute;">
+            <div class="hamburger__menu">
+                <img class="icon_close" src="./Images/icon_close.svg" alt="">
+                <div class="hamburger__menu_nav">
+                    <a href="#">Black</a>
+                    <a href="#">Green</a>
+                    <a href="#">White</a>
+                    <a href="#">Oolong</a>
+                    <a href="#">Pu-erh</a>
+                </div>
+                <div class="hamburger__menu_line"></div>
+                <div class="hamburger__menu_textfooter">
+                    <a href="#">Contact Us</a>
+                    <a href="#">Our Blog</a>
+                    <a href="#">Shipping and Delivery</a>
+                </div>
+                <div class="hamburger__menu_platefooter">
+                    <div class="hamburger__menu_footer">
+                        <a href="#"><img src="./Images/icon_bag.svg" alt="shop"></a>
+                        <a href="#"><img src="./Images/icon_man.svg" alt="person"></a>
+                        <a class="header__icons_find" href="#"><img src="./Images/icon_find.svg" alt="find"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </div>
         <div class="header">
-            <div class="hamburger">&#9776;</div>
+            <div class="hamburger">
+                <div class="hamburger__icons">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
             <a class="great_logo" href="#"> <img id="logo_cup" src="./Images/Great_logo.svg" alt="logo"></a>
             <nav class="nav">
                 <a href="#">Black</a>
@@ -227,85 +261,83 @@
                 </div>
             </div>
         </section>
-
-        <footer>
-            <div class="foot">
-                <nav>
-                    <div class="foot__nav">
-                        <div class="foot__nav_items">
-                            <p class="foot__nav_header">Products</p>
-                            <ol class="foot__ol">
-                                <li><a href="#">Black tea</a></li>
-                                <li><a href="#">Green tea</a></li>
-                                <li><a href="#">White tea</a></li>
-                                <li><a href="#">Oolong tea</a></li>
-                                <li><a href="#">Pu-erh tea</a></li>
-                            </ol>
-                        </div>
-
-                        <div class="foot__nav_items">
-                            <p class="foot__nav_header">Company</p>
-                            <ol class="foot__ol">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">Our Blog</a></li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Shipping & Delivery</a></li>
-                                <li><a href="#">Refund policy</a></li>
-                                <li><a href="#">Terms of Service</a></li>
-                            </ol>
-                        </div>
-                    </div>
-                </nav>
-                <div class="foot__secblock">
-                    <div class="foot__quote">
-                        <blockquote>
-                            <p class="text_quote">“Tea is a journey. It can take you to new places and open your mind to
-                                new
-                                experiences. Let every
-                                sip transport you to a world of wonder and possibility”</p>
-                            <p class="avter_quote">Dragomir Teodorescu, Tealuxe owner</p>
-                        </blockquote>
+    </main>
+    <footer>
+        <div class="foot">
+            <nav>
+                <div class="foot__nav">
+                    <div class="foot__nav_items">
+                        <p class="foot__nav_header">Products</p>
+                        <ol class="foot__ol">
+                            <li><a href="#">Black tea</a></li>
+                            <li><a href="#">Green tea</a></li>
+                            <li><a href="#">White tea</a></li>
+                            <li><a href="#">Oolong tea</a></li>
+                            <li><a href="#">Pu-erh tea</a></li>
+                        </ol>
                     </div>
 
-                    <adress class="foot__adress">
-                        <p class="foot__nav_header">Stay In Touch</p>
-                        <p class="text_adress">Please feel free to contact us via the email of phone. We would be happy
-                            to
-                            hear
-                            from you!</p>
-                        <div class="foot__adress_contact">
-                            <a href="#"><img src="./Images/Great_logo.svg" alt=""></a>
-                            <div class="foot__adress_phone">
-                                <a class="phone" href="tel: +370 680 123456"><img src="./Images/phone.svg" alt=""> +370
-                                    680
-                                    123456</a>
-                                <a class="phone" href="email:info@tealuxe.com"><img src="./Images/email.svg" alt="">
-                                    info@tealuxe.com</a>
-                            </div>
-                        </div>
-                        <div class="foot__adress_socnet">
-                            <a href="fb.com"><img src="./Images/fb.svg" alt=""></a>
-                            <a href="fb.com"><img src="./Images/YT.svg" alt=""></a>
-                            <a href="fb.com"><img src="./Images/Inst.svg" alt=""></a>
-                            <a href="fb.com"><img src="./Images/TW.svg" alt=""></a>
-                        </div>
-                    </adress>
+                    <div class="foot__nav_items">
+                        <p class="foot__nav_header">Company</p>
+                        <ol class="foot__ol">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Our Blog</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Shipping & Delivery</a></li>
+                            <li><a href="#">Refund policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ol>
+                    </div>
                 </div>
-                <div class="foot__other">
-                    <small class="foot__other_copy">&copy; Tealuxe, 2023</small>
-                    <div class="foot__other_pay">
-                        <a href=""><img src="./Images/logos_mastercard.png" alt=""></a>
-                        <a href=""><img style="margin-bottom: 3px;" src="./Images/Visa.svg" alt=""></a>
-                        <a href=""><img src="./Images/logos_google-pay.png" alt=""></a>
-                        <a href=""><img src="./Images/logos_paypal.png" alt=""></a>
+            </nav>
+            <div class="foot__secblock">
+                <div class="foot__quote">
+                    <blockquote>
+                        <p class="text_quote">“Tea is a journey. It can take you to new places and open your mind to
+                            new
+                            experiences. Let every
+                            sip transport you to a world of wonder and possibility”</p>
+                        <p class="avter_quote">Dragomir Teodorescu, Tealuxe owner</p>
+                    </blockquote>
+                </div>
+
+                <adress class="foot__adress">
+                    <p class="foot__nav_header">Stay In Touch</p>
+                    <p class="text_adress">Please feel free to contact us via the email of phone. We would be happy
+                        to
+                        hear
+                        from you!</p>
+                    <div class="foot__adress_contact">
+                        <a href="#"><img src="./Images/Great_logo.svg" alt=""></a>
+                        <div class="foot__adress_phone">
+                            <a class="phone" href="tel: +370 680 123456"><img src="./Images/phone.svg" alt=""> +370
+                                680
+                                123456</a>
+                            <a class="phone" href="email:info@tealuxe.com"><img src="./Images/email.svg" alt="">
+                                info@tealuxe.com</a>
+                        </div>
                     </div>
+                    <div class="foot__adress_socnet">
+                        <a href="fb.com"><img src="./Images/fb.svg" alt=""></a>
+                        <a href="fb.com"><img src="./Images/YT.svg" alt=""></a>
+                        <a href="fb.com"><img src="./Images/Inst.svg" alt=""></a>
+                        <a href="fb.com"><img src="./Images/TW.svg" alt=""></a>
+                    </div>
+                </adress>
+            </div>
+            <div class="foot__other">
+                <small class="foot__other_copy">&copy; Tealuxe, 2023</small>
+                <div class="foot__other_pay">
+                    <a href=""><img src="./Images/logos_mastercard.png" alt=""></a>
+                    <a href=""><img style="margin-bottom: 3px;" src="./Images/Visa.svg" alt=""></a>
+                    <a href=""><img src="./Images/logos_google-pay.png" alt=""></a>
+                    <a href=""><img src="./Images/logos_paypal.png" alt=""></a>
                 </div>
             </div>
-        </footer>
-
-
-    </main>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
